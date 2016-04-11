@@ -1,0 +1,137 @@
+---
+layout: default
+---
+
+<!-- banner -->
+<div id="home" class="banner">
+  <div class="flexslider">
+      <ul class="slides">
+        {% for banner in site.data.banners %}
+          <li>
+              <img src="{{ banner.img }}"/>
+
+              <div class="slider-caption">
+                  <div class="text-center">
+                      <h1 class="wow fadeInDown" data-wow-delay="2000">{{ banner.title }}</h1>
+
+                      <h3 class="wow fadeInDown" data-wow-delay="2000">
+                          <span class="rotate">{{ banner.desc }}</span>
+                      </h3>
+                      <div style="margin-bottom: 20px;"></div>
+                  </div>
+              </div>
+          </li>
+        {% endfor %}
+      </ul>
+  </div>
+</div>
+<!-- banner -->
+
+<div id="brief">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6 col-md-7 wow fadeInLeft animated" data-wow-delay="2000" style="visibility: visible; animation-name: fadeInLeft;">
+            <h3>{{ site.title }}</h3>
+            <h2>您最坚实有力的伙伴！</h2>
+            <p>苏州猛力坚工程机械有限公司成立于2013年，主要专注于液压破碎锤的生产和销售。公司使用最先进的生产线，对每一台设备都有严格的质量管理，把品质落实到每个生产环节，公司以高质量高品质的形象赢得广大客户的青睐。</p>
+            <p>为追求更加稳定和高效的产品质量，我公司采用了韩国进口机芯，并为广大用户提供了一系列产品，分为塔式、三角及静音三种样式，可配各种型号的挖机和装载机。与同行业产品相比具有打击力大、噪音低、超耐用、低故障率等优势。</p>
+          </div>
+          <div class="col-sm-6 col-md-5 wow fadeInRight animated" data-wow-delay="2000" style="visibility: visible; animation-name: fadeInRight;">
+            <h3>关于猛力坚</h3>
+            <div class="col-md-6 col-sm-6 col-xs-6">
+              <img src="http://moslav.com/wp-content/themes/home/images/company-img-1.jpg" class="img-responsive" alt="company 1">
+            </div>
+            <div class="col-md-6 col-sm-6 col-xs-6">
+              <img src="http://moslav.com/wp-content/themes/home/images/company-img-2.jpg" class="img-responsive" alt="company 2">
+            </div>
+            <div class="col-md-6 col-sm-6 col-xs-6">
+              <img src="http://moslav.com/wp-content/themes/home/images/company-img-3.jpg" class="img-responsive" alt="company 3">
+            </div>
+            <div class="col-md-6 col-sm-6 col-xs-6">
+              <img src="http://moslav.com/wp-content/themes/home/images/company-img-4.jpg" class="img-responsive" alt="company 4">
+            </div>
+          </div>
+    </div>
+  </div>
+</div>
+
+<div id="product">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 wow fadeInDown  text-center animated" data-wow-delay="900" style="visibility: visible; animation-name: fadeInDown;">
+        <h3>产品系列</h3>
+        <p>我们的销售网络覆盖全国各地，苏州，南京，徐州，武汉，吉林，厦门</p>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <div id="map" class="text-center"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="case">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 wow fadeInDown  text-center animated" data-wow-delay="900" style="visibility: visible; animation-name: fadeInDown;">
+        <h3>工程案例</h3>
+        <p>我们的销售网络覆盖全国各地，苏州，南京，徐州，武汉，吉林，厦门</p>
+      </div>
+      {% for case in site.data.cases %}
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="thumbnail">
+            <img src="{{ case.img }}" alt="...">
+            <div class="caption">
+              <!-- <h3>Thumbnail label</h3> -->
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+<!-- 
+<div id="network" class="hidden">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 wow fadeInDown  text-center animated" data-wow-delay="900" style="visibility: visible; animation-name: fadeInDown;">
+        <h3>销售网络</h3>
+        <p>我们的销售网络覆盖全国各地，苏州，南京，徐州，武汉，吉林，厦门</p>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <div id="map" class="text-center"></div>
+      </div>
+    </div>
+  </div>
+</div>
+ -->
+
+<div id="service" class="hidden">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 wow fadeInDown animated" data-wow-delay="900" style="visibility: visible; animation-name: fadeInDown;">
+        <h3 class="text-center">售后服务</h3>
+        <p>感谢您选择、购买“猛力坚”牌液压破碎锤！</p>
+        <p>请您在使用破碎锤前阅读《液压破碎锤使用维护手册》，在对其所述的内容有正确理解的基础上，开始使用“猛力坚”牌液压破碎锤，并按其要求正确地进行使用、维护及保养破碎锤！</p>
+        <p>一、质量保证</p>
+        <p>质量保证的起始时间，以安装交机时填写的“破碎锤安装交机暨售后服务报告”上的时间为准。该报告是您享受售后服务的重要依据。必须认真填写并在安装交机完毕后由本公司经销商或代理商递交给本公司备案，否则可能会导致您不能享受售后服务。</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 wow fadeInDown  text-center animated" data-wow-delay="900" style="visibility: visible; animation-name: fadeInDown;">
+        <h3>联系我们</h3>
+        <p>苏州猛力坚工程机械有限公司</p>
+        <p>公司地址：苏州市吴江区上亿汽车城</p>
+        <p>联系人：刘先生</p>
+        <p>电话：13616254858</p>
+        <p>邮箱：329028169@qq.com</p>
+        <p><img class="img-responsive center-block" style="width:200px;" src="/assets/weixin.png" /></p>
+      </div>
+    </div>
+  </div>
+</div>

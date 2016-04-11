@@ -1,0 +1,11 @@
+# Site settings
+name: 猛力坚
+title: 苏州猛力坚工程机械有限公司
+email: stang003@163.com
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://localhost:4000" # the base hostname & protocol for your site
+
+# Build settings
+markdown: kramdown
+
+description: 苏州猛力坚工程机械有限公司成立于2015年，主要专注于液压破碎锤的生产和销售。公司使用最先进的生产线，对每一台设备都有严格的质量管理，把品质落实到每个生产环节，公司以高质量高品质的形象赢得广大客户的青睐。
