@@ -91,6 +91,10 @@
 
 /* Individual effects */
 
+figure.effect-none {
+    background: #FFFFFF;
+}
+
 /*---------------*/
 /***** Lily *****/
 /*---------------*/
